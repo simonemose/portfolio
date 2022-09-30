@@ -1,0 +1,21 @@
+@media screen and (max-width : 992px)
+{
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background-color: var(--col-secondario);
+        text-align: center;
+        padding: var(--padding-regular);
+        row-gap: var(--dimentions-thin);
+        text-align: start;
+        font-size: 80%;
+    }
+    footer img{
+    display: none;
+    }
+    footer a{
+        color:inherit;
+    }
+}
