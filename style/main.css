@@ -1,0 +1,272 @@
+@media screen and (min-width: 992px)
+{   
+    main{
+        overflow-x: hidden;
+        min-height: 1920px;
+        height: fit-content;
+        background-image: url(../img/bglungo.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_section{
+        padding-top: calc(2*var(--padding-thin));
+        padding-bottom: calc(2*var(--padding-thin));
+        padding-left: var(--padding-regular);
+        padding-right: var(--padding-regular);
+    }
+
+    .primo{
+        display: flex;
+        align-items: center;
+        padding-top: calc(6*var(--padding-thin));
+    }
+
+    .primo div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: var(--font-titles);
+    }
+
+    .primo h3{
+        font-size: 200%;
+    }
+    .primo h2{
+        font-size: 300%;
+    }
+    .primo strong{
+        font-family: var(--font-titles-black);
+    }
+
+    .primo img{
+        height: var(--dimentions-regular);
+        position: relative;
+        left: calc( 6*var(--dimentions-large));
+    }
+    .primo:hover img{
+        transform: translateX(calc(-4 * var(--dimentions-large)));
+    }
+
+    .primo:hover img, .primo img{
+        transition: 1.5s;
+    }
+
+    .primo picture{
+        width: 0;
+    }
+
+    .footballer{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .footballer img{
+        position: relative;
+        left:0;
+    }
+    img[alt='player']{
+        height: var(--dimentions-large);
+        bottom: calc(-1*var(--dimentions-large));
+    }
+    img[alt='football']{
+        height: var(--dimentions-thin);
+        /*top: calc(-1*var(--dimentions-large));*/
+        left: var(--dimentions-thin);
+        bottom:0;
+    }
+
+    .active{
+        /*transform: translate(85vw, -5vw)  rotateZ(calc(360deg * 3));*/
+        animation: throw linear 2s;
+        transition-duration: 1.5s;
+    }   
+
+    @keyframes throw {
+        0% {transform: translate(0,0);}
+        10% {transform: translate(8vw,-1vw);}
+        20% {transform: translate(16vw,-2vw);}
+        30% {transform: translate(24vw,-3vw);}
+        40% {transform: translate(32vw,-4vw);}
+        50% {transform: translate(40vw,-5vw);}
+        60% {transform: translate(48vw,-5vw);}
+        70% {transform: translate(56vw,-4vw);}
+        80% {transform: translate(64vw,-3vw);}
+        90% {transform: translate(72vw,-2vw);}
+        100% {transform: translate(80vw,-1vw);}
+      }
+
+      .sport{
+        padding-top: 0;
+      }
+    
+
+    .left{
+        width: 60%;
+        font-family: var(--font-text-light);
+        font-size: 150%;
+        padding-left: var(--padding-large);
+    }
+    .left strong{
+        font-family: var(--font-text-bold);
+    }
+
+    .right{
+        text-align: end;
+        font-family: var(--font-text-light);
+        font-size: 150%;
+        width: 60%;
+        align-self: end;
+        padding-right: var(--padding-large);
+    }
+    .right strong{
+        font-family: var(--font-text-bold);
+    }
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .right h3, .left h3{
+        font-size: 150%;
+        font-family: var(--font-text-bold);
+    }
+
+    .contatti{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-text-light);
+        font-size: 150%;
+        gap: var(--dimentions-thin);
+    }
+    .contatti h2{
+        font-size: 150%;
+        font-family: var(--font-text-bold);
+    }
+
+    .contatti ion-icon{
+        font-size: 150%;
+        cursor: pointer;
+    }
+
+    .mail{
+        display: flex;
+    }
+
+    .outmain{
+        width: 100vw;
+        background-image: url(../img/sfondo2.svg);
+        background-position: top;
+        background-size: 100vw;
+        background-repeat: no-repeat;
+        padding: var(--padding-regular);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outmain section{
+        margin-bottom: var(--dimentions-regular);
+    }
+
+    .skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        gap: var(--dimentions-thin);
+        font-family: var(--font-text-light);
+        font-size: 150%;
+        gap: var(--dimentions-regular);
+    }
+
+    .skills h2{
+        font-size: 150%;
+        font-family: var(--font-text-bold);
+    }
+
+    .skills .container_skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--dimentions-thin);
+        flex-wrap: wrap;
+        width: 60%;
+    }
+
+    .container_skills div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: calc(12*var(--dimentions-thin));
+        border-radius: var(--dimentions-thin);
+        box-shadow: 0 0 var(--dimentions-thin) rgba(0, 0, 0, 0.5);
+        padding: var(--padding-thin);
+        backdrop-filter: blur(1px);
+        gap: 0.3vw;
+    }
+
+    .container_skills div:hover{
+        cursor:pointer;
+        transform: scale(0.9);
+    }
+
+    .selected{
+        background-color: var(--col-secondario);
+        color: var(--col-sfondo);
+    }
+
+    .container_skills ion-icon{
+        font-size: 150%;
+    }
+
+    .portfolio{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--dimentions-regular);
+        font-size: 150%;
+    }
+
+    .portfolio h2{
+        font-family: var(--font-text-bold);
+        font-size: 150%;
+    }
+
+    .portfolio .container_portfolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--dimentions-regular);
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+
+    .container_portfolio img{
+        width: var(--dimentions-large);
+        height: var(--dimentions-large);
+        border-radius: var(--dimentions-thin);
+        box-shadow: 0 0 var(--dimentions-thin) rgba(0, 0, 0, 0.5);
+    }
+
+    .container_portfolio img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .main_space{
+        padding-top: var(--dimentions-regular);
+        padding-bottom: var(--dimentions-regular);
+    }
+}
